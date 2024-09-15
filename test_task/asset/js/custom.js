@@ -1,0 +1,3 @@
+// custom.js  
+
+document.addEventListener("DOMContentLoaded",()=>{let e=document.getElementById("okButton"),t=document.getElementById("publishComment"),n=document.getElementById("commentText"),l=document.getElementById("commentsList");e.onclick=()=>{let e=document.getElementById("response1").value,t=document.getElementById("response2").value;console.log(e,t)},t.onclick=()=>{let e=n.value;if(e){let t=document.createElement("li");t.textContent=`Anonymous: ${e}`,l.appendChild(t),n.value=""}}});
